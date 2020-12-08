@@ -9,7 +9,7 @@
 						<input v-model="keyword" class="searchinput" placeholder="请输入关键字"></input>
 					</view>
 				</view>
-				<view @click="fetchBookData" class="sousuo">搜索</view>
+				<view @click="fetchBookData(keyword)" class="sousuo">搜索</view>
 			</view>
 			 <view @click="takephoto" class="viSearch">
 				<image class="imageIcon" mode="widthFix" :src="url+'trash/photo.png'"></image>
