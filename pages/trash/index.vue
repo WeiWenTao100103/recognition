@@ -27,7 +27,7 @@
 			<view class="table">
 				<text>生活垃圾基本分类</text>
 				<view class="item">
-					<view class="list" v-for="item in tableList">
+					<view class="list" v-for="item in tableList" :key="item.key">
 						<image mode="widthFix" :src="url+item.imageSrc"></image>
 					</view>
 				</view>
