@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "图片识别",
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup"
+  }
+}

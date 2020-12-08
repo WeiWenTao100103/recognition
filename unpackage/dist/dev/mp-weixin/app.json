@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/ai/index",
+    "pages/ai/ai",
+    "pages/trash/index",
+    "pages/ocr/index",
+    "pages/ocr/ocr",
+    "pages/trash/trash"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#ff0000",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/ai/index",
+        "iconPath": "static/image/ai.png",
+        "selectedIconPath": "static/image/ai_a.png",
+        "text": "图片识别"
+      },
+      {
+        "pagePath": "pages/ocr/index",
+        "iconPath": "static/image/ocr.png",
+        "selectedIconPath": "static/image/ocr_a.png",
+        "text": "文字识别"
+      },
+      {
+        "pagePath": "pages/trash/index",
+        "iconPath": "static/image/trash.png",
+        "selectedIconPath": "static/image/trash_a.png",
+        "text": "垃圾分类"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
