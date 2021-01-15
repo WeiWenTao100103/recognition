@@ -39,6 +39,16 @@
 				护照识别
 			</view>
 		</view>
+		<view class="fixed">
+			<view class="kefu">
+				<image :src="url+'public/kefu.png'"></image>
+				<button open-type="contact"></button>
+			</view>
+			<view class="share">
+				<image :src="url+'public/share.png'"></image>
+				<button open-type="share"></button>
+			</view>
+		</view>
 	</view>
 </template>
 
@@ -53,6 +63,13 @@
 		onLoad() {
 		},
 		methods: {
+			onShareAppMessage: function (res) {
+			    return {
+			      title: '高精度的文字OCR智能识别',
+			      path: '/pages/ocr/index',
+				  imageUrl:this.url+'ocr/undraw.jpeg'
+			    }
+			 },
 			navTo(type){
 				wx.navigateTo({
 				  url: '/pages/ocr/ocr?type='+type,

@@ -179,6 +179,16 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -188,6 +198,13 @@ var _default =
   onLoad: function onLoad() {
   },
   methods: {
+    onShareAppMessage: function onShareAppMessage(res) {
+      return {
+        title: '精准的物体场景智能识别',
+        path: '/pages/ai/index',
+        imageUrl: this.url + 'ai/ai.jpeg' };
+
+    },
     navTo: function navTo(type) {
       wx.navigateTo({
         url: '/pages/ai/ai?type=' + type });

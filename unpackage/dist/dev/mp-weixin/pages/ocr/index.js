@@ -174,6 +174,16 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   components: {},
@@ -185,6 +195,13 @@ var _default =
   onLoad: function onLoad() {
   },
   methods: {
+    onShareAppMessage: function onShareAppMessage(res) {
+      return {
+        title: '高精度的文字OCR智能识别',
+        path: '/pages/ocr/index',
+        imageUrl: this.url + 'ocr/undraw.jpeg' };
+
+    },
     navTo: function navTo(type) {
       wx.navigateTo({
         url: '/pages/ocr/ocr?type=' + type });

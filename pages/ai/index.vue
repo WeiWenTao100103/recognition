@@ -39,6 +39,16 @@
 				地标识别
 			</view>
 		</view>
+		<view class="fixed">
+			<view class="kefu">
+				<image :src="url+'public/kefu.png'"></image>
+				<button open-type="contact"></button>
+			</view>
+			<view class="share">
+				<image :src="url+'public/share.png'"></image>
+				<button open-type="share"></button>
+			</view>
+		</view>
 	</view>
 </template>
 
@@ -51,6 +61,13 @@
 		onLoad() {
 		},
 		methods: {
+			onShareAppMessage: function (res) {
+			    return {
+			      title: '精准的物体场景智能识别',
+			      path: '/pages/ai/index',
+				  imageUrl:this.url+'ai/ai.jpeg'
+			    }
+			 },
 			navTo(type){
 				wx.navigateTo({
 				  url: '/pages/ai/ai?type='+type,
@@ -92,6 +109,7 @@
 				}
 			}
 		}
+		
 	}
 
 </style>

@@ -33,6 +33,16 @@
 				</view>
 			</view>
 		</view>
+		<view class="fixed">
+			<view class="kefu">
+				<image :src="url+'public/kefu.png'"></image>
+				<button open-type="contact"></button>
+			</view>
+			<view class="share">
+				<image :src="url+'public/share.png'"></image>
+				<button open-type="share"></button>
+			</view>
+		</view>
 	</view>
 	
 </template>
@@ -124,6 +134,13 @@
 			this.getToken();
 		},
 		methods: {
+			onShareAppMessage: function (res) {
+			    return {
+			      title: '智能垃圾分类识别',
+			      path: '/pages/trash/index',
+				  imageUrl:this.url+'trash/banner.png'
+			    }
+			 },
 			getToken(){
 				uniCloud.callFunction({
 					name:'ai',
